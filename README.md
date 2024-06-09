@@ -6,7 +6,9 @@
 > * table "accounts" according to the accounts.sql file
 > * table "records" according to the records.sql file
 >
-> ![alt text](https://github.com/martin-vrublovsky/attendance-system/blob/main/assets/img/Screenshot_1.png?raw=true)
+<div align="center">
+    <img src="https://github.com/martin-vrublovsky/attendance-system/blob/main/assets/img/Screenshot_1.png?raw=true" width="400">
+</div>
 
 ## Advantages of this web app
 :white_check_mark: security by login

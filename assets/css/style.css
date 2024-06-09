@@ -1,0 +1,364 @@
+/* Login page */
+.login-page {
+    background-color: var(--login-page-bg-color);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Login form */
+.login-form {
+    background-color: var(--white);
+    padding: 2.5rem 1.3rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.5rem 0 var(--box-shadow-color-opacity);
+}
+
+.login-form h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.fields-group {
+    margin: 1.5rem 0;
+}
+
+.fields-group label {
+    padding: 0.8rem;
+    display: flex;
+    margin-right: 0.2rem;
+}
+
+.fields-group label img {
+    width: 1rem;
+}
+
+.fields-group input {
+    border: 0;
+    font-size: 0.9rem;
+    width: 13.5rem;
+}
+
+.fields-group input:focus {
+    outline: none;
+}
+
+.username-field,
+.password-field {
+    border: 1.5px solid var(--border-color);
+    display: flex;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.username-field {
+    margin-bottom: 1rem;
+}
+
+.login-form input[type="submit"] {
+    border: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100%;
+    padding: 0.95rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="submit"]:active {
+    background-color: var(--blue-hover-active);
+    transition: background-color 0.2s;
+}
+/* End - Login form */
+/* End - Login page */
+
+/* Authentication page */
+.login-error-msg {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.5rem 0 var(--box-shadow-color-opacity);
+
+    /* Responsive design */
+    margin: 0 2.2rem;
+    text-align: center;
+}
+
+.login-error-msg a {
+    border: 1.5px solid var(--white);
+    display: inline-flex;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.login-error-msg a img {
+    width: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.login-error-msg a span {
+    color: var(--white);
+    font-size: 0.9rem;
+    margin-top: 0.1rem;
+}
+/* End - Authentication page */
+
+/* Records page */
+.records-page {
+    background-color: var(--records-page-bg-color);
+}
+
+/* Top navigation menu */
+.top-nav {
+    background-color: var(--blue);
+    height: 3.3rem;
+    padding: 0 5rem;
+}
+
+.top-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-nav ul li a h1,
+.top-nav ul li a span {
+    color: var(--top-nav-items-color);
+}
+
+.top-nav ul li a h1 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.top-nav ul li:last-child a {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav ul li a img {
+    margin-right: 0.4rem;
+    width: 0.9rem;
+}
+
+.top-nav ul li a span {
+    font-size: 0.9rem;
+    margin-top: 0.05rem;
+}
+
+.top-nav ul li a h1:hover,
+.top-nav ul li a h1:active,
+.top-nav ul li a span:hover,
+.top-nav ul li a span:active {
+    color: var(--white);
+    transition: color 0.2s;
+}
+/* End - Top navigation menu */
+
+/* Main */
+main {
+    padding: 0 5rem;
+    overflow-y: auto;
+    height: calc(100vh - 3.3rem);
+}
+
+/* Current page header */
+.current-page-header {
+    padding: 1.3rem 0;
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.current-page-header h2 {
+    font-size: 1.3rem;
+}
+/* End - Current page header */
+
+/* Table of records */
+.table-of-records {
+    margin: 1.5rem auto;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.2rem 0 var(--box-shadow-color-opacity);
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.table-of-records tr:not(tbody tr:last-child) {
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.table-of-records thead tr th,
+.table-of-records tbody tr td {
+    padding: 0.4rem 0.7rem;
+}
+
+.table-of-records thead tr:first-child th {
+    text-align: left;
+}
+
+/* Edit & delete record buttons */
+.table-of-records tbody tr td a {
+    padding: 0.55rem 0.35rem;
+    display: inline-flex;
+    border-radius: 0.2rem;
+}
+
+.table-of-records tbody tr td a:first-child {
+    background-color: var(--blue);
+    margin-right: 0.1rem;
+}
+
+.table-of-records tbody tr td a:first-child img {
+    width: 1rem;
+}
+
+.table-of-records tbody tr td a:first-child:hover,
+.table-of-records tbody tr td a:first-child:active {
+    background-color: var(--blue-hover-active);
+    transition: background-color 0.2s;
+}
+
+.table-of-records tbody tr td a:last-child {
+    background-color: var(--red);
+    padding: 0.55rem 0.415rem;
+}
+
+.table-of-records tbody tr td a:last-child img {
+    width: 0.87rem;
+}
+
+.table-of-records tbody tr td a:last-child:hover,
+.table-of-records tbody tr td a:last-child:active {
+    background-color: var(--red-hover-active);
+    transition: background-color 0.2s;
+}
+/* End - Edit & delete record buttons */
+
+/* Export records button */
+.table-of-records thead tr:first-child th a {
+    background-color: var(--green);
+    padding: 0.5rem;
+    display: inline-flex;
+    border-radius: 0.2rem;
+}
+
+.table-of-records thead tr:first-child th a img {
+    width: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.table-of-records thead tr:first-child th a span {
+    color: var(--white);
+    font-weight: 400;
+    margin: auto;
+}
+
+.table-of-records thead tr:first-child th a:hover,
+.table-of-records thead tr:first-child th a:active {
+    background-color: var(--green-hover-active);
+    transition: background-color 0.2s;
+}
+/* End - Export records button */
+/* End - Table of records */
+/* End - Main */
+/* End - Records page */
+
+/* Edit record page */
+/* Edit form */
+.edit-form {
+    background-color: var(--white);
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.2rem 0 var(--box-shadow-color-opacity);
+}
+
+.edit-form-content-groups {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit-form-first-content-group {
+    display: flex;
+    margin-right: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.edit-form-first-content {
+    margin-right: 2.5rem;
+}
+
+.edit-form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="datetime-local"],
+.edit-form textarea {
+    border: 1.5px solid var(--border-color);
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    width: 17rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.edit-form textarea {
+    height: 8.15rem;
+    resize: none;
+}
+
+.edit-form textarea:focus {
+    outline: none;
+}
+
+.edit-form input[type="submit"] {
+    border: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.8rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.edit-form input[type="submit"]:hover,
+.edit-form input[type="submit"]:active {
+    background-color: var(--blue-hover-active);
+    transition: background-color 0.2s;
+}
+/* End - Edit form */
+/* End - Edit record page */
+
+/* Responsive design */
+@media screen and (max-width: 495px) {
+    .top-nav,
+    main {
+        padding: 0 1.5rem;
+    }
+
+    .top-nav ul li a h1,
+    .current-page-header h2 {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .edit-form-first-content-group {
+        flex-direction: column;
+    }
+
+    .edit-form-first-content {
+        margin-bottom: 1.2rem;
+    }
+}
+/* End - Responsive design */

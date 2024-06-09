@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prihlásenie | Dochádzkový systém</title>
+
+    <!-- Internal CSS files -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="login-page">
+    <div class="login-form">
+        <h1>Prihlásenie</h1>
+
+        <form action="./auth" method="post">
+            <div class="fields-group">
+                <div class="username-field">
+                    <label for="username">
+                        <img src="./assets/icons/user-tie-solid.svg">
+                    </label>
+                    <input type="text" name="username" placeholder="Prihlasovacie meno" required>
+                </div>
+
+                <div class="password-field">
+                    <label for="password">
+                        <img src="./assets/icons/lock-solid.svg">
+                    </label>
+                    <input type="password" name="password" placeholder="Heslo" required>
+                </div>
+            </div>
+
+            <input type="submit" value="Prihlásiť sa">
+        </form>
+    </div>
+</body>
+</html>

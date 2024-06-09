@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Poppins font - regular */
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: local("Poppins"),
+         url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+         url("../fonts/poppins-regular-webfont.woff") format("woff");
+}
+
+/* Poppins font - semibold */
+@font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: local("Poppins"),
+         url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+         url("../fonts/poppins-semibold-webfont.woff") format("woff");
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --login-page-bg-color: #47566b;
+    --records-page-bg-color: #f0f1f5;
+
+    --white: #fff;
+
+    --blue: #2a6ed5;
+    --blue-hover-active: #2663c0;
+
+    --red: #ff4d4d;
+    --red-hover-active: #ff3333;
+
+    --green: #39ac39;
+    --green-hover-active: #339933;
+
+    --box-shadow-color-opacity: rgba(0, 0, 0, 0.3);
+
+    --border-color: #dee0e4;
+
+    --top-nav-items-color: #dee0e4;
+}

@@ -7,7 +7,7 @@
 > * table "records" according to the records.sql file
 >
 <div align="center">
-    <img src="https://github.com/martin-vrublovsky/attendance-system/blob/main/assets/img/Screenshot_1.png?raw=true" width="400">
+    <img src="https://github.com/martin-vrublovsky/attendance-system/blob/main/assets/img/Screenshot_1.png?raw=true" width="500">
 </div>
 
 ## Advantages of this web app
